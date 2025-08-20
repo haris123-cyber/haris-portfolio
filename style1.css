@@ -1,0 +1,209 @@
+.nav-link.active {
+  background-color: #0d6dfd00; /* Bootstrap blue */
+  color: white !important;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.251);
+  
+
+}
+#n1{
+  background-color: #0d6dfd00; /* Bootstrap blue */
+  color: white !important;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.299);
+
+
+}
+
+#n2{
+  background-color: #0d6dfd00; /* Bootstrap blue */
+  color: white !important;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.245);
+
+}
+
+#n3{
+  background-color: #0d6dfd00; /* Bootstrap blue */
+  color: white !important;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.226);
+
+}
+
+#n4{
+  background-color: #0d6dfd00; /* Bootstrap blue */
+  color: white !important;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.278);
+
+}
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 3rem 0;
+  }
+
+  .social-icons a {
+    font-size: 1.25rem;
+  }
+#about-section{
+  #about-section h2 {
+    text-align: center;
+    width: 100%;   /* makes heading span full row */
+    display: block; 
+    margin-bottom: 20px; /* add spacing below */
+}
+
+
+}
+.img-fluid{
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 0.5s;  /* waits before animation starts */
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* .fw-bold {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  animation: showRight 1s ease forwards;
+  animation-delay: .4s;
+} */
+
+.fw-bold {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.5s;  /* starts after HI */
+}
+
+.name {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 1s;  /* starts after HI */
+}
+
+.lead {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 1.5s;   /* starts after Name */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* Initial hidden state */
+/* General heading styles */
+/* General heading styles */
+/* General heading styles */
+/* General heading styles */
+/* Apply to all heading tags */
+h1, h2, h3, h4, h5, h6 {
+  padding: 10px 0;          
+  transition: color 0.3s, transform 0.3s;  /* Smooth color + scale transition */
+  cursor: pointer;          
+}
+
+/* Hover effect: color + bounce + grow */
+ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+  color: rgb(246, 167, 167);     
+  transform: scale(1.1);   /* Increase text size */
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%   { transform: translateY(0) scale(1.1); }
+  30%  { transform: translateY(-10px) scale(1.1); }
+  50%  { transform: translateY(0) scale(1.1); }
+  70%  { transform: translateY(-5px) scale(1.1); }
+  100% { transform: translateY(0) scale(1.1); }
+}
+/* Smooth zoom when hover */
+img.img-fluid {
+  transition: transform 0.5s ease-in-out;
+}
+
+img.img-fluid:hover {
+  transform: scale(1.5); /* Zoom 10% */
+}
+/* ------------------------------------------------------------------------ */
+/* Image zoom effect */
+.card img {
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1); /* Smooth zoom-in */
+}
+/* ---------------------------------------------------- */
+/* Card base style */
+.card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2); /* light pink shadow */
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-10px) scale(1.05);  
+  box-shadow: 0 12px 30px rgba(255, 105, 180, 0.332); /* stronger pink glow */
+}
+
+img.img-fluid:hover img {
+  transform: scale(1.1); /* Smooth zoom-in */
+}
+/* ---------------------------------------------------- */
+
+/* Container that draws the long strip */
+.brand-strip{
+  position:relative;
+  display:inline-block;          /* sits like a logo */
+  padding-left: 10px;            /* spacing for the text area */
+  z-index:0;
+  ;
+}
+.brand-strip::before{
+  content:"";
+  position:absolute;
+  left:30px;                    /* extend left/right beyond text */
+  right:19px;
+  top:50%;
+  transform:translateY(-50%);
+  height:44px;
+  background:rgb(128, 128, 128);
+  border-radius:10px;
+  box-shadow:0 8px 22px rgba(235, 242, 198, 0.29);
+  z-index:-1;  
+                    /* behind the text */
+}
+
+/* Text styling inside the strip */
+.brand-text{
+  font-weight:900;
+  color:#efeaed;
+  text-decoration:none;
+  letter-spacing:.3px;
+  font-size: 20px;
+}
+.brand-text .dot{ color:pink; }
